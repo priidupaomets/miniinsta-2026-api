@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="et">
+<head>
+  <meta charset="utf-8">
+  <title>{{title}}</title>
+  <style>
+    body  { font-family: system-ui, sans-serif; margin: 2rem auto; max-width: 52rem; padding: 0 1rem; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { text-align: left; padding: .4rem .6rem; border-bottom: 1px solid #ddd; }
+    .ready { color: #1a7f37; }
+    .todo  { color: #888; }
+  </style>
+</head>
+<body>
+  <h1>{{title}}</h1>
+  <p>Klõpsake aadressil, et lõpp-punkti kutsuda.</p>
+  <table>
+    <thead>
+      <tr><th>Meetod</th><th>Aadress</th><th>Mida teeb</th><th>Seis</th></tr>
+    </thead>
+    <tbody>
+      {{#each endpoints}}
+      <tr>
+        <td>{{method}}</td>
+        <td><a href="{{url}}">{{url}}</a></td>
+        <td>{{info}}</td>
+        <td>{{#if ready}}<span class="ready">töötab</span>{{else}}<span class="todo">kohahoidja</span>{{/if}}</td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</body>
+</html>

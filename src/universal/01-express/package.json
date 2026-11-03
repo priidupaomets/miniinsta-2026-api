@@ -1,0 +1,17 @@
+{
+  "name": "miniinsta-universal",
+  "version": "1.0.0",
+  "description": "MiniInsta API, step 1: Express (no database yet, the same for every engine)",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node --env-file=.env server.js",
+    "dev": "node --watch --env-file=.env server.js"
+  },
+  "engines": {
+    "node": ">=20.6"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

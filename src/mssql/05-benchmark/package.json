@@ -1,0 +1,20 @@
+{
+  "name": "miniinsta",
+  "version": "5.0.0",
+  "description": "MiniInsta API, 5. samm: mõõtmine (8. loeng)",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node --env-file=.env server.js",
+    "dev": "node --watch --env-file=.env server.js",
+    "bench": "node bench.js"
+  },
+  "engines": {
+    "node": ">=20.6"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "hbs": "^4.2.0",
+    "mssql": "^12.0.0"
+  }
+}
